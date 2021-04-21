@@ -1,0 +1,67 @@
+@import "../global/variables.less";
+
+.hero-site-form__wrap {
+  position: relative;
+}
+
+.site-name img {
+  position: absolute;
+  top: 52px;
+  left: 45px;
+}
+
+.site-form {
+  background-color: @basic-white;
+}
+
+.site-form-review__user,
+.site-form-review__contact-info,
+.site-form-review__impression,
+.site-form-review__attractions,
+.site-form-review__emotion {
+  border: none;
+}
+
+input,
+textarea {
+  background-color: @basic-light-grey-b;
+}
+
+.site-form-review__contact-info-field label {
+  display: block;
+}
+
+.site-form-review__contact-info-field input {
+  display: inline;
+}
+
+input::placeholder,
+textarea::placeholder,
+.impression-list-radio__item label,
+.attractions-list-checkbox__item label {
+  font-weight: 700;
+  font-size: 18px;
+  color: @basic-black;
+  text-transform: none;
+}
+
+.form__icon-contact-info-tel,
+.form__icon-contact-info-email {
+  background-color: @basic-light-grey-c;
+}
+
+.impression-list-radio,
+.attractions-list-checkbox {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-form-review__emotion-field label {
+  display: block;
+}
+
+.site-form-review__emotion-field textarea {
+  display: inline;
+  resize: none;
+}
