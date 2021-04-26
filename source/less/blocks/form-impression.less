@@ -1,0 +1,48 @@
+@import "../global/variables.less";
+
+.site-form-review__impression {
+  position: relative;
+  margin: 20px 0 0 0;
+  padding: 0 0 41px 0;
+}
+
+.site-form-review__impression::after {
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  content: "";
+  width: 325px;
+  height: 1px;
+  background-color: @basic-light-grey-e;
+}
+
+.site-form-review__impression-title {
+  margin: 0 0 37px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.site-form-review__impression-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 0 26px;
+  padding: 0;
+}
+
+.impression-list-radio__item {
+  display: block;
+  margin: 0 0 43px 0;
+  padding: 0;
+}
+
+.impression-list-radio__item:last-child {
+  margin: 0;
+}
+
+.impression-list-radio__item input,
+.impression-list-radio__item label {
+  margin: 0;
+  padding: 0;
+}

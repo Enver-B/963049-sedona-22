@@ -1,0 +1,48 @@
+@import "../global/variables.less";
+
+.site-form-review__attractions {
+  position: relative;
+  margin: 15px 0 0 0;
+  padding: 0 0 30px 0;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    content: "";
+    width: 325px;
+    height: 1px;
+    background-color: @basic-light-grey-e;
+  }
+}
+
+.site-form-review__attractions-title {
+  margin: 0 0 36px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.site-form-review__attractions-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 0 0 29px;
+  padding: 0;
+}
+
+.attractions-list-checkbox__item {
+  margin: 0 0 54px 0;
+  padding: 0;
+}
+
+.attractions-list-checkbox__item:last-child {
+  margin: 0;
+}
+
+.attractions-list-checkbox__item input,
+.attractions-list-checkbox__item label {
+  margin: 0;
+  padding: 0;
+}
