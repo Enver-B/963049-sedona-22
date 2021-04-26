@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="page-body page-container">
-  <header class="page-header">
+<body class="page-body">
+  <header class="page-header header-container">
     <a class="page-header__logo">
       <img src="img/svg/logotype-mobile.svg" class="page-header__logo-image" width="102" height="84" alt="интернет-сайт SEDONA">
     </a>
@@ -39,14 +39,14 @@
     <section class="introductory-part">
       <div class="introductory-part__wrap">
         <img src="img/jpg/page-title-main-background.jpg"  width="320" height="389" alt="Фон с названием сайта">
-        <div class="introductory-part__name site-name">
-          <img src="img/svg/welcome.svg" width="116" height="28" alt="welcome">
-          <img src="img/svg/to-the-gorgeous.svg" width="108" height="19" alt="to the gorgeous">
-          <img src="img/svg/sedona-name.svg" width="282" height="49" alt="Sedona">
-          <img src="img/svg/because-the-grand-canyon-sucks.svg" width="174" height="46" alt="Because the grand canyon sucks!">
+        <div class="introductory-part__name site-name-main-page">
+          <img class="site-name-main-page__image-welcome" src="img/svg/welcome.svg" width="116" height="28" alt="welcome">
+          <img class="site-name-main-page__image-gorgeous" src="img/svg/to-the-gorgeous.svg" width="108" height="19" alt="to the gorgeous">
+          <img class="site-name-main-page__image-name" src="img/svg/sedona-name.svg" width="282" height="49" alt="Sedona">
+          <img class="site-name-main-page__image-because" src="img/svg/because-the-grand-canyon-sucks.svg" width="174" height="46" alt="Because the grand canyon sucks!">
         </div>
       </div>
-      <div class="introductory-part__slogan site-slogan">
+      <div class="introductory-part__slogan site-slogan page-container">
         <h2 class="site-slogan__title title-black-font">Седона - небольшой<br>
             городок в Аризоне,<br> заслуживающий большего!</h2>
         <p class="site-slogan__desk text-black-font">Рассмотрим 5 причин, по которым<br> Седона круче,
@@ -55,15 +55,16 @@
     </section>
     <section class="first-reason">
       <div class="first-reason__wrap">
-        <div class="first-reason__content first-content">
+        <div class="first-reason__content first-content page-container">
           <h2 class="first-content__title title-white-font">Настоящий городок</h2>
-          <p class="first-content__text text-white-font">-№1-<br>
-              Седона не атракцион для туристов, там<br> течет своя жизнь</p>
+          <p class="first-content__number-one text-white-font">- №1 -</p>
+          <p class="first-content__text text-white-font">Седона не атракцион для туристов, там<br>
+              течет своя жизнь</p>
         </div>
         <div class="first-reason__image">
           <img src="img/jpg/image-for-first-reason.jpg" width="320" height="260" alt="Фото к первой причине">
         </div>
-        <div class="first-reason__services">
+        <div class="first-reason__services page-container">
           <ul class="first-reason__list services-list">
             <li class="services-list__item">
               <h3 class="services-list__item-title title-black-font">Жилье</h3>
@@ -86,49 +87,58 @@
     </section>
     <section class="second-reason">
       <div class="second-reason__wrap">
-        <div class="second-reason__desk second-content">
+        <div class="second-reason__desk second-content page-container">
           <h2 class="second-reason__title title-white-font">Там есть мост дьявола</h2>
-          <p class="second-reason__text text-white-font">-№2-<br>
-              Да, но по нему можно пройти! Если вы<br> осмелитесь, конечно</p>
+          <p class="second-reason__number-two text-white-font">- №2 -</p>
+          <p class="second-reason__text text-white-font">Да, но по нему можно пройти! Если вы<br>
+              осмелитесь, конечно</p>
         </div>
         <div class="second-reason__image">
           <img src="img/jpg/image-for-second-reason.jpg" width="320" height="260" alt="Фото ко второй причине">
         </div>
       </div>
     </section>
-    <section class="other-reasons">
+    <section class="other-reasons page-container">
       <div class="other-reasons__wrap">
         <ul class="other-reasons__list reasons-list">
           <li class="reasons-list__item">
             <h2 class="reasons-list__item-title title-black-font">Небольшая площадь</h2>
-            <p class="reasons-list__item-text text-black-font">-№3-<br>
-                Все интересные места находятся<br> очень близко</p>
+            <p class="reasons-list__item-number-three text-black-font">- №3 -</p>
+            <p class="reasons-list__item-text text-black-font">Все интересные места находятся<br>
+                очень близко</p>
           </li>
           <li class="reasons-list__item">
             <h2 class="reasons-list__item-title title-black-font">Красивая дорога</h2>
-            <p class="reasons-list__item-text text-black-font">-№4-<br>
-                Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+            <p class="reasons-list__item-number-four text-black-font">- №4 -</p>
+            <p class="reasons-list__item-text text-black-font">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
           </li>
           <li class="reasons-list__item">
             <h2 class="reasons-list__item-title title-black-font">Мало туристов</h2>
-            <p class="reasons-list__item-text text-black-font">-№5-<br>
-                Большинство едет в Гранд-Каньон<br> и толпится там</p>
+            <p class="reasons-list__item-number-five text-black-font">- №5 -</p>
+            <p class="reasons-list__item-text text-black-font">Большинство едет в Гранд-Каньон<br>
+                и толпится там</p>
           </li>
         </ul>
       </div>
     </section>
+    <section class="hotel-search-and-booking">
+      <div class="hotel-search-and-booking__wrap page-container">
+        <div class="search">
+          <h2 class="search__title">Заинтересовались?</h2>
+          <p class="search__text">Укажите предполагаемые даты<br>
+            поездки, и покажем Вам лучшие<br> предложения гостиниц в седоне</p>
+        </div>
+        <div>
+          <a class="search__button button" href="#">Найти гостиницу</a>
+        </div>
+      </div>
+      <div class="footer-map">
+        <img src="img/jpg/map-mobile.jpg" width="320" height="350" alt="Карта с точкой расположения Седоны">
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
-    <div class="search">
-      <h2 class="search__title">Заинтересовались?</h2>
-      <p class="search__text">Укажите предполагаемые даты<br>
-          поездки, и покажем Вам лучшие<br> предложения гостиниц в седоне</p>
-      <a class="search__button button" href="#">Найти гостиницу</a>
-    </div>
-    <div  class="footer-map">
-      <img src="img/jpg/map-mobile.jpg" width="320" height="350" alt="Карта с точкой расположения Седоны">
-    </div>
-    <div class="footer-contact">
+    <div class="footer-contact page-container">
       <ul class="footer-contact__contact-list footer-contact-list">
         <li class="footer-contact-list__item">
           <p class="footer-contact-list__item-link">#visitSEDONA</p>

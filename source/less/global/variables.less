@@ -18,12 +18,27 @@
   src: url("../../fonts/ptsansbold.woff2") format("woff2"), url("../../fonts/ptsansbold.woff") format("woff");
 }
 
+// Viewports
+
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 // colors
 
 @basic-white: #FFFFFF;
 @basic-black: #000000;
 @basic-blue-blue: #81B3D2;
 @basic-dark-grey: #333333;
+@basic-dark-grey-a: rgba(1, 1, 1, 0.2);
 @basic-light-grey: #EEEEEE;
 @basic-light-grey-b: #F2F2F2;
 @basic-light-grey-c: #E6E6E6;
+@basic-light-grey-a: rgba(255, 255, 255, 0.2);
+@basic-light-grey-b: #D6D6D6;
