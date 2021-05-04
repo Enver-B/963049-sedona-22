@@ -3,6 +3,7 @@
 .site-form-review__emotion {
   margin: 20px 0 0 0;
   padding: 0;
+  border: none;
 }
 
 .site-form-review__emotion-field {
@@ -23,6 +24,15 @@
   padding: 13px 20px 29px 20px;
   width: 250px;
   height: 118px;
+  background-color: @basic-light-grey-c;
   border: none;
   resize: none;
+}
+
+.site-form-review__emotion-field textarea::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: @basic-black;
+  text-transform: none;
 }

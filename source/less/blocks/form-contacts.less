@@ -8,6 +8,7 @@
   align-items: center;
   margin: 20px 0 0 0;
   padding: 0 0 28px 0;
+  border: none;
 }
 
 .site-form-review__contact-info::after {
@@ -19,7 +20,6 @@
   height: 1px;
   background-color: @basic-light-grey-e;
 }
-
 
 .site-form-review__contact-info-title {
   margin: 0 0 17px 0;
@@ -44,7 +44,16 @@
   margin: 0 0 14px 0;
   padding: 18px 22px 14px 22px;
   width: 246px;
+  background-color: @basic-light-grey-c;
   border: none;
+}
+
+.site-form-review__contact-info-field input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: @basic-black;
+  text-transform: none;
 }
 
 .site-form-review__contact-info-field:last-child input {

@@ -8,16 +8,17 @@
   align-items: center;
   margin: 20px 0 0 0;
   padding: 0 0 25px 0;
-}
+  border: none;
 
-.site-form-review__user::after {
-  position: absolute;
-  bottom: 0;
-  left: -20px;
-  content: "";
-  width: 325px;
-  height: 1px;
-  background-color: @basic-light-grey-e;
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    content: "";
+    width: 325px;
+    height: 1px;
+    background-color: @basic-light-grey-e;
+  }
 }
 
 .site-form-review__user-title {
@@ -28,7 +29,6 @@
 
 .site-form-review__user-field {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 0 0 20px 0;
@@ -47,9 +47,15 @@
   display: block;
   margin: 0;
   padding: 18px 22px 14px 22px;
+  width: 100%;
+  background-color: @basic-light-grey-c;
   border: none;
 }
 
-.form__user-name {
-  width: 194px;
+.site-form-review__user-field input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: @basic-black;
+  text-transform: none;
 }
