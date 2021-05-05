@@ -1,0 +1,30 @@
+
+@import "../global/variables.less";
+
+.social-networks-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0 45px 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    margin-right: 6px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__item a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 48px;
+    background-color: @basic-blue-blue;
+  }
+}

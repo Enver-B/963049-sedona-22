@@ -1,0 +1,75 @@
+@import "../global/variables.less";
+
+.site-form-review__contact-info {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 0 0;
+  padding: 0 0 28px 0;
+  border: none;
+}
+
+.site-form-review__contact-info::after {
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  content: "";
+  width: 325px;
+  height: 1px;
+  background-color: @basic-light-grey-e;
+}
+
+.site-form-review__contact-info-title {
+  margin: 0 0 17px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.site-form-review__contact-info-field {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.site-form-review__contact-info-field label {
+  display: block;
+  margin: 0 0 8px 22px;
+  padding: 0;
+}
+
+.site-form-review__contact-info-field input {
+  display: block;
+  margin: 0 0 14px 0;
+  padding: 18px 22px 14px 22px;
+  width: 246px;
+  background-color: @basic-light-grey-c;
+  border: none;
+}
+
+.site-form-review__contact-info-field input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: @basic-black;
+  text-transform: none;
+}
+
+.site-form-review__contact-info-field:last-child input {
+  margin: 0;
+}
+
+.form__icon-contact-info-tel,
+.form__icon-contact-info-email {
+  position: absolute;
+  top: 34px;
+  left: 238px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 48px;
+  background-color: @basic-light-grey-d;
+}

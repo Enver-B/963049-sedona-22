@@ -1,0 +1,43 @@
+@import "../global/variables.less";
+
+.impression-list-radio {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.impression-list-radio__item {
+  display: block;
+  margin: 0 0 43px 0;
+  padding: 0;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.impression-list-radio__item input,
+.impression-list-radio__item label {
+  margin: 0;
+  padding: 0;
+}
+
+.impression-list-radio__item input {
+  background-color: @basic-light-grey-c;
+}
+
+.impression-list-radio__item input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: @basic-black;
+  text-transform: none;
+}
+
+.impression-list-radio__item label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: @basic-black;
+  text-transform: none;
+}

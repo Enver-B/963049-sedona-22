@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-  <header class="page-header">
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="page-body">
+  <header class="page-header header-container">
     <a class="page-header__logo">
       <img src="img/svg/logotype-mobile.svg" class="page-header__logo-image" width="102" height="84" alt="интернет-сайт Sedona">
     </a>
@@ -14,69 +17,69 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">Главная</a>
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item">
+            <a class="nav-link" href="#">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Фото и видео</a>
+          <li class="nav-list__item">
+            <a class="nav-link" href="#">Фото и видео</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Форма отзыва</a>
+          <li class="nav-list__item">
+            <a class="nav-link" href="#">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+          <li class="nav-list__item">
+            <a class="nav-link" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="page-main">
+  <main class="page-form">
     <h1 class="visually-hidden">Форма отзыва сайта Sedona</h1>
     <section class="hero-site-form">
       <h2 class="visually-hidden">Заголовок формы</h2>
       <div class="hero-site-form__wrap">
         <img src="img/jpg/page-title-form-background.jpg"  width="320" height="214" alt="Фон с названием сайта на странице с формой">
-        <div class="hero-site-form__title">
+        <div class="hero-site-form__img-wrap">
           <img src="img/svg/sedona-name.svg" width="229" height="39" alt="Заголовок страницы с формой сайта Sedona">
         </div>
-        <div>
-          <h3 class="hero-site-form__subtitle">Оставьте свой отзыв</h3>
-          <p class="hero-site-form__desk">Помогите нашим отелямстать лучше!<br>
+        <div class="hero-site-form__title page-container">
+          <h3 class="hero-site-form__subtitle title-black-font">Оставьте свой отзыв</h3>
+          <p class="hero-site-form__desk text-form-black">Помогите нашим отелямстать лучше!<br>
               Оставьте отзыв о них, а также о посещенных Вами<br> достопримечательностях</p>
         </div>
       </div>
     </section>
     <section class="site-form">
       <h2 class="visually-hidden">Форма сайта</h2>
-      <div class="site-form__wrap">
+      <div class="site-form__wrap page-container">
         <form class="site-form-review">
           <fieldset class="site-form-review__user">
-            <legend class="site-form-review__user-title">Представьтесь:</legend>
+            <legend class="site-form-review__user-title title-black-font">Представьтесь:</legend>
             <p class="site-form-review__user-field">
-              <label for="name">Имя*:</label>
-              <input class="form__user-name" type="text" id="name" name="name">
+              <label class="text-black-font" for="name">Имя*:</label>
+              <input class="form__user-name" type="text" id="name" name="name" placeholder="Петр">
             </p>
             <p class="site-form-review__user-field">
-              <label for="surname">Фамилия*:</label>
-              <input class="form__user-surname" type="text" id="surname" name="surname">
+              <label class="text-black-font" for="surname">Фамилия*:</label>
+              <input class="form__user-surname" type="text" id="surname" name="surname" placeholder="Иванов">
             </p>
             <p class="site-form-review__user-field">
-              <label for="patronymic">Отчество*:</label>
-              <input class="form__user-patronymic" type="text" id="patronymic" name="patronymic">
+              <label class="text-black-font" for="patronymic">Отчество*:</label>
+              <input class="form__user-patronymic" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
             </p>
           </fieldset>
           <fieldset class="site-form-review__contact-info">
-            <legend class="site-form-review__contact-info-title">Контактная информация:</legend>
+            <legend class="site-form-review__contact-info-title title-black-font">Контактная информация:</legend>
             <p class="site-form-review__contact-info-field">
-              <label for="tel">Контактный телефон*:</label>
+              <label class="text-black-font" for="tel">Контактный телефон*:</label>
               <input class="form__contact-info-tel" type="tel" id="tel" name="tel" placeholder="Введите телефон">
               <a class="form__icon-contact-info-tel">
                 <img src="img/svg/icon-phone.svg" width="18" height="18" alt="Телефонная трубка">
               </a>
             </p>
             <p class="site-form-review__contact-info-field">
-              <label for="mail">Электронная почта*:</label>
+              <label class="text-black-font" for="mail">Электронная почта*:</label>
               <input class="form__contact-info-email" type="email" id="mail" name="mail" placeholder="Введите e-mail">
               <a class="form__icon-contact-info-email">
                 <img src="img/svg/icon-mail.svg" width="16" height="12" alt="Почтовый конверт">
@@ -84,7 +87,7 @@
             </p>
           </fieldset>
           <fieldset class="site-form-review__impression">
-            <legend class="site-form-review__impression-title">Ваше общее впечатление:</legend>
+            <legend class="site-form-review__impression-title title-black-font">Ваше общее впечатление:</legend>
             <ul class="site-form-review__impression-list impression-list-radio">
               <li class="impression-list-radio__item">
                 <input class="impression-list-radio__input" type="radio" name="impression" value="positive" id="impression-positive" checked>
@@ -101,7 +104,7 @@
             </ul>
           </fieldset>
           <fieldset class="site-form-review__attractions">
-            <legend class="site-form-review__attractions-title">Посещенные достопримечательности:</legend>
+            <legend class="site-form-review__attractions-title title-black-font">Посещенные достопримечательности:</legend>
             <ul class="site-form-review__attractions-list attractions-list-checkbox">
               <li class="attractions-list-checkbox__item">
                 <input class="attractions-list-checkbox__input" type="checkbox" name="devil-bridge" id="attractions-devil-bridge" checked>
@@ -123,47 +126,47 @@
           </fieldset>
           <fieldset class="site-form-review__emotion">
             <p class="site-form-review__emotion-field">
-              <label for="text-emotion">Опишите свои эмоции:</label>
-              <textarea class="form__text-emotion" rows="6" cols="25" id="text-emotion" name="text-emotion" placeholder="Опишите подробно все сои восторги"></textarea>
+              <label class="title-black-font" for="text-emotion">Опишите свои эмоции:</label>
+              <textarea class="form__text-emotion" rows="6" cols="25" id="text-emotion" name="text-emotion" placeholder="Опишите подробно все свои восторги"></textarea>
             </p>
           </fieldset>
-          <button class="site-form-review__button" type="submit" formaction="https://echo.htmlacademy.ru">Отправить отзыв</button>
+          <button class="site-form-review__button button" type="submit" formaction="https://echo.htmlacademy.ru">Отправить отзыв</button>
         </form>
       </div>
     </section>
   </main>
-  <footer>
-    <div class="page-footer__contact">
-      <ul class="page-footer__contact-list footer-contact-list">
+  <footer class="page-footer page-container">
+    <div class="footer-contact">
+      <ul class="footer-contact__contact-list footer-contact-list">
         <li class="footer-contact-list__item">
           <p class="footer-contact-list__item-link">#visitSEDONA</p>
         </li>
         <li class="footer-contact-list__item">
-          <div>
+          <div class="footer-contact-list__wrap">
             <ul class="social-networks-list">
               <li class="social-networks-list__item">
-                <a class="social-networks-list__button" href="#">
+                <a class="social-networks-list__link" href="#">
                   <img src="img/svg/button-icon-twitter.svg" width="18" height="15" alt="ссылка-иконка Twitter">
                 </a>
               </li>
               <li class="social-networks-list__item">
-                <a class="social-networks-list__button" href="#">
+                <a class="social-networks-list__link" href="#">
                   <img src="img/svg/button-icon-facebook.svg" width="9" height="19" alt="ссылка-иконка Facebook">
                 </a>
               </li>
               <li class="social-networks-list__item">
-                <a class="social-networks-list__button" href="#">
+                <a class="social-networks-list__link" href="#">
                   <img src="img/svg/icon-button-youtube.svg" width="9" height="19" alt="ссылка-иконка Youtube">
                 </a>
               </li>
             </ul>
           </div>
         </li>
-        <li class="footer-contact-list__item">
-          <div class="footer-contact-list__developer-wrap">
-            <p class="footer-contact-list__developer-text">Разработано</p>
-            <a class="social-networks-list__developer-link" href="#">
-              <img src="img/svg/htmlacademy-logo.svg"  width="27" height="35" alt="ссылка-иконка Htmlacademy">
+        <li class="footer-contact-list__item site-creator">
+          <div class="site-creator__wrap">
+            <p class="site-creator__text">Разработано</p>
+            <a class="site-creator__link" href="#">
+              <img src="img/svg/htmlacademy-logo.svg" width="27" height="35" alt="ссылка-иконка Htmlacademy">
             </a>
           </div>
         </li>
@@ -171,24 +174,24 @@
     </div>
   </footer>
 
-  <section class="modal-popup-error">
+  <section class="modal-popup-error page-container">
     <div class="modal-popup-error__wrap">
-      <h2 class="modal-popup-error__title">Что-то пошло не так!</h2>
-      <p class="modal-popup-error__text">Проверьте поля, выделенные<br>
+      <h2 class="modal-popup-error__title title-black-font">Что-то пошло не так!</h2>
+      <p class="modal-popup-error__text text-form-black">Проверьте поля, выделенные<br>
           красным, скорее всего вы<br>
           забыли их заполнить</p>
-      <button class="modal-popup-error__button" type="submit" formaction="https://echo.htmlacademy.ru">ок</button>
+      <button class="modal-popup-error__button button" type="submit" formaction="https://echo.htmlacademy.ru">ок</button>
     </div>
   </section>
-  <section class="modal-popup-review-sent">
+  <section class="modal-popup-review-sent page-container">
     <div class="modal-popup-review-sent__wrap">
-      <h2 class="modal-popup-review-sent__title">Ваш отзыв отправлен!</h2>
-      <p class="modal-popup-review-sent__text">Спасибо за Ваше участие, Ваш<br>
+      <h2 class="modal-popup-review-sent__title title-black-font">Ваш отзыв отправлен!</h2>
+      <p class="modal-popup-review-sent__text text-form-black">Спасибо за Ваше участие, Ваш<br>
           отзыв уже посутпил к нам.<br>
           В ближайшее время мы<br>
           опубликуем его на сайте.</p>
-      <button  class="modal-popup-review-sent__button" type="submit" formaction="https://echo.htmlacademy.ru">Закрыть окно</button>
     </div>
+    <button  class="modal-popup-review-sent__button button" type="submit" formaction="https://echo.htmlacademy.ru">Закрыть окно</button>
   </section>
 </body>
 </html>
