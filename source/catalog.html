@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-  <header class="page-header">
+<body class="page-body">
+  <header class="page-header header-container">
     <a class="page-header__logo">
       <img src="img/svg/logotype-mobile.svg" class="page-header__logo-image" width="102" height="84" alt="интернет-сайт Sedona">
     </a>
@@ -14,91 +17,94 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">Главная</a>
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item">
+            <a class="nav-link" href="#">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Фото и видео</a>
+          <li class="nav-list__item">
+            <a class="nav-link" href="#">Фото и видео</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Форма отзыва</a>
+          <li class="nav-list__item">
+            <a class="nav-link" href="#">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+          <li class="nav-list__item">
+            <a class="nav-link" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="page-main">
+  <main class="page-catalog">
     <h1 class="visually-hidden">Страница каталога сайта Sedona</h1>
-    <section class="hero-site-form">
+    <section class="hero-site-catalog">
       <h2 class="visually-hidden">Заголовок с названием сайта</h2>
-      <div class="hero-site-catalog__wrap">
+      <div class="hero-site-page__wrap">
         <img src="img/jpg/page-title-background.jpg"  width="320" height="214" alt="Фон с названием сайта на странице каталога">
-        <div class="hero-site-catalog__title">
+        <div class="hero-site-page__img-wrap">
           <img src="img/svg/sedona-name.svg" width="229" height="39" alt="Заголовок сайта Sedona">
         </div>
-        <div class="hero-site-catalog__description">
-          <h3 class="hero-site-catalog__subtitle">Фото и видео</h3>
-          <p class="hero-site-form__desk">Не можете решиться на путешествие<br>
-              из-за курса? Фотографии помогут Вам<br> забыть о политике и экономике.</p>
-        </div>
       </div>
+    <section class="photo-video">
+      <h2 class="visually-hidden">Страница с фото и видео</h2>
+      <div class="photo-video__description page-container">
+        <h3 class="photo-video__subtitle title-black-font">Фото и видео</h3>
+        <p class="photo-video__desk text-form-black">Не можете решиться на путешествие<br>
+          из-за курса? Фотографии помогут Вам<br> забыть о политике и экономике.</p>
+      </div>
+    </section>
     </section>
     <section class="catalog-photo">
       <h2 class="visually-hidden">Каталог фото сайта Sedona</h2>
       <div class="catalog-photo__wrap">
-        <ul class="catalog-photo__list photo-lis/t">
-          <li class="photo-list__item photo-item">
-            <div class="photo-item__wrap">
+        <ul class="catalog-photo__list">
+          <li class="catalog-photo__item photo-item">
+            <div class="photo-item__wrap page-container">
               <figure class="photo-item__picture">
                 <img src="img/jpg/catalog-photo-1.jpg" width="280" height="280" alt="Неродные просторы">
-                <figcaption class="photo-item__photo-name">Неродные просторы<br>
-                  <p class="photo-item__photo-author">Автор фото: Борис</p>
+                <figcaption class="photo-item__photo-name text-form-dark-black">Неродные просторы<br>
+                  <p class="photo-item__photo-author text-form-grey">Автор фото: Борис</p>
                 </figcaption>
                 <button class="photo-item__button-like" type="button">
-                  <span class="photo-item__like-number">1350</span>
+                  <span class="photo-item__like-number text-form-dark-black">1350</span>
                 </button>
               </figure>
             </div>
           </li>
-          <li class="photo-list__item photo-item">
-            <div class="photo-item__wrap">
+          <li class="catalog-photo__item photo-item">
+            <div class="photo-item__wrap page-container">
               <figure class="photo-item__picture">
                 <img src="img/jpg/catalog-photo-2.jpg" width="280" height="280" alt="Местная растительность">
-                <figcaption class="photo-item__photo-name">Местная растительность<br>
-                  <p class="photo-item__photo-author">Автор фото: Сергей</p>
+                <figcaption class="photo-item__photo-name text-form-dark-black">Местная растительность<br>
+                  <p class="photo-item__photo-author text-form-grey">Автор фото: Сергей</p>
                 </figcaption>
                 <button class="photo-item__button-like" type="button">
-                  <span class="photo-item__like-number">143</span>
+                  <span class="photo-item__like-number text-form-dark-black">143</span>
                 </button>
               </figure>
             </div>
           </li>
-          <li class="photo-list__item photo-item">
-            <div class="photo-item__wrap">
+          <li class="catalog-photo__item photo-item">
+            <div class="photo-item__wrap page-container">
               <figure class="photo-item__picture">
                 <img src="img/jpg/catalog-photo-3.jpg" width="280" height="280" alt="Дорога на Север">
-                <figcaption class="photo-item__photo-name">Дорога на Север<br>
-                  <p class="photo-item__photo-author">Автор фото: Петр</p>
+                <figcaption class="photo-item__photo-name text-form-dark-black">Дорога на Север<br>
+                  <p class="photo-item__photo-author text-form-grey">Автор фото: Петр</p>
                 </figcaption>
                 <button class="photo-item__button-like" type="button">
-                  <span class="photo-item__like-number">96</span>
+                  <span class="photo-item__like-number text-form-dark-black">96</span>
                 </button>
               </figure>
             </div>
           </li>
-          <li class="photo-list__item photo-item">
-            <div class="photo-item__wrap">
+          <li class="catalog-photo__item photo-item">
+            <div class="photo-item__wrap page-container">
               <figure class="photo-item__picture">
                 <img src="img/jpg/catalog-photo-4.jpg" width="280" height="280" alt="Дорога на Север">
-                <figcaption class="photo-item__photo-name">Мост Дьявола<br>
-                  <p class="photo-item__photo-author">Автор фото: Антон</p>
+                <figcaption class="photo-item__photo-name text-form-dark-black">Мост Дьявола<br>
+                  <p class="photo-item__photo-author text-form-grey">Автор фото: Антон</p>
                 </figcaption>
                 <button class="photo-item__button-like" type="button">
-                  <span class="photo-item__like-number">254</span>
+                  <span class="photo-item__like-number text-form-dark-black">254</span>
                 </button>
               </figure>
             </div>
@@ -109,9 +115,9 @@
     <section class="catalog-video">
       <h2 class="visually-hidden">Видеоролик о сайте Sedona</h2>
       <div class="catalog-video__wrap">
-        <div class="catalog-video__description">
-          <h3 class="catalog-video__subtitle">Все еще сомневаетесь?</h3>
-          <p class="catalog-video__desk">Смотрите видеопрезентацию и<br>
+        <div class="catalog-video__description page-container">
+          <h3 class="catalog-video__subtitle title-black-font">Все еще сомневаетесь?</h3>
+          <p class="catalog-video__desk text-form-black">Смотрите видеопрезентацию и<br>
             скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
         </div>
         <div class="catalog-video__video-player">
@@ -120,14 +126,14 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="page-footer__contact">
-      <ul class="page-footer__contact-list footer-contact-list">
+  <footer class="page-footer">
+    <div class="footer-contact page-container">
+      <ul class="footer-contact__contact-list footer-contact-list">
         <li class="footer-contact-list__item">
           <p class="footer-contact-list__item-link">#visitSEDONA</p>
         </li>
         <li class="footer-contact-list__item">
-          <div>
+          <div class="footer-contact-list__wrap">
             <ul class="social-networks-list">
               <li class="social-networks-list__item">
                 <a class="social-networks-list__link" href="#">
@@ -147,10 +153,10 @@
             </ul>
           </div>
         </li>
-        <li class="footer-contact-list__item">
-          <div class="footer-contact-list__developer-wrap">
-            <p class="footer-contact-list__developer-text">Разработано</p>
-            <a class="social-networks-list__developer-link" href="#">
+        <li class="footer-contact-list__item site-creator">
+          <div class="site-creator__wrap">
+            <p class="site-creator__text">Разработано</p>
+            <a class="site-creator__link" href="#">
               <img src="img/svg/htmlacademy-logo.svg"  width="27" height="35" alt="ссылка-иконка Htmlacademy">
             </a>
           </div>
