@@ -14,7 +14,27 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 20px;
-  height: 84px;
-  order: 2;
+  height: 56px;
+  order: 5;
   background-color: @basic-white;
+  z-index: 5;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    position: relative;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    position: absolute;
+    left: 45%;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  order: 3;
+}
+

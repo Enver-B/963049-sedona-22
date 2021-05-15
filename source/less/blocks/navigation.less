@@ -5,9 +5,35 @@
   background-color: @basic-blue-blue;
 }
 
-.nav-link {
-  font-size: 18px;
-  line-height: 40px;
-  color: @basic-white;
-  text-decoration: none;
+@media (min-width: @tablet-width) {
+  .main-nav {
+    margin: 0;
+    background-color: @basic-white;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-around;
+    min-width: 740px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

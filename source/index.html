@@ -10,7 +10,10 @@
 <body class="page-body">
   <header class="page-header header-container">
     <a class="page-header__logo">
-      <img src="img/svg/logotype-mobile.svg" class="page-header__logo-image" width="102" height="84" alt="интернет-сайт SEDONA">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/svg/logotype-desktop.svg">
+        <img src="img/svg/logotype-mobile.svg" class="page-header__logo-image" width="102" height="84" alt="интернет-сайт SEDONA">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -64,25 +67,27 @@
         <div class="first-reason__image">
           <img src="img/jpg/image-for-first-reason.jpg" width="320" height="260" alt="Фото к первой причине">
         </div>
-        <div class="first-reason__services page-container">
-          <ul class="first-reason__list services-list">
-            <li class="services-list__item">
-              <h3 class="services-list__item-title title-black-font">Жилье</h3>
-              <p class="services-list__item-text text-black-font">Рекомендуем пожить в<br>
-                настоящем мотеле, все как в<br> кино!</p>
-            </li>
-            <li class="services-list__item">
-              <h3 class="services-list__item-title title-black-font">Сувениры</h3>
-              <p class="services-list__item-text text-black-font">Не только китайкого, но и<br>
-                местного производства!</p>
-            </li>
-            <li class="services-list__item">
-              <h3 class="services-list__item-title title-black-font">Еда</h3>
-              <p class="services-list__item-text text-black-font">Всегда заказывайте<br>
-                фирменный бургер, вы не<br> разочаруетесь!</p>
-            </li>
-          </ul>
-        </div>
+      </div>
+    </section>
+    <section class="first-reason-services">
+      <div class="first-reason-service__wrap page-container">
+        <ul class="first-reason-services__list services-list">
+          <li class="services-list__item">
+            <h3 class="services-list__item-title title-black-font">Жилье</h3>
+            <p class="services-list__item-text text-black-font">Рекомендуем пожить в<br>
+              настоящем мотеле, все как в<br> кино!</p>
+          </li>
+          <li class="services-list__item">
+            <h3 class="services-list__item-title title-black-font">Сувениры</h3>
+            <p class="services-list__item-text text-black-font">Не только китайкого, но и<br>
+              местного производства!</p>
+          </li>
+          <li class="services-list__item">
+            <h3 class="services-list__item-title title-black-font">Еда</h3>
+            <p class="services-list__item-text text-black-font">Всегда заказывайте<br>
+              фирменный бургер, вы не<br> разочаруетесь!</p>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="second-reason">
